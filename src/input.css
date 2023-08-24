@@ -1,0 +1,42 @@
+@import url('https://fonts.cdnfonts.com/css/bebas-kai');
+/* Definir a fonte para todo o site */
+body {
+    font-family: 'Bebas Kai', sans-serif;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply bg-white rounded overflow-hidden shadow-md;
+}
+
+.btn{
+    @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
+}
+
+/* Definir as classes de estilo de imagem de fundo */
+.bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+  
+  /* Adicionar a classe personalizada com a imagem de fundo */
+  .bg-custom {
+    @apply bg-cover bg-center bg-no-repeat;
+    background-image: url('img/BACKGROUND.gif');
+   
+  }
+  .w-98{
+    width: 26rem;
+  }
+  
+  
+
+  
