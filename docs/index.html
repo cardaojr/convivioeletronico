@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Convivio Eletronico</title>
+  <link href="output.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body class="">
+  <header class="bg-black flex flex-row fixed w-full top-0 z-50 justify-between">
+    <div>
+      <a href="index.html">
+        <img src="img\FAVICONBRANCO.png" alt="FAVICONBRANCO.png" class="ml-4 my-4 w-28">
+      </a>
+    </div>
+    
+    
+    <div class="md:hidden my-3">
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon id="menuIcon" name="menu" onclick="toggleMenu()" class="text-white"></ion-icon>
+          <ion-icon id="closeIcon" name="close" onclick="toggleMenu()" class="text-white hidden"></ion-icon>
+      </span>
+  </div>
+  
+    <div class="hidden md:block">
+      <ul class="text-lg flex flex-row text-green-400 my-4 ">
+        <li class="py-2 px-4">
+          <a href="index.html"> HOME</a>
+        </li>
+        <li class="py-2 px-4">
+          <a href="vision.html">VISION</a>
+        </li>
+        <li class="py-2 px-4">
+        <a href="location.html">LOCATION</a>
+        </li>
+        <li class="py-2 px-4">
+        <a href="program.html">PROGRAM</a>
+        </li>
+        <li class="py-2 px-4">
+          <a href="infofaq.html"> INFO & FAQ</a>
+        </li>
+      </ul>
+    </div> 
+  </header>
+  <div class="md:hidden fixed inset-0 bg-black bg-opacity-90 transition-opacity duration-300 z-40 hidden" id="mobileMenuLayer">
+    <div class="flex justify-center items-center h-full">
+        <ul class="text-4xl text-green-400">
+          <li class="py-2 px-4">
+            <a href="index.html"> HOME</a>
+          </li>
+          <li class="py-2 px-4">
+            <a href="vision.html">VISION</a>
+          </li>
+          <li class="py-2 px-4">
+            <a href="location.html">LOCATION</a>
+          </li>
+          <li class="py-2 px-4">
+            <a href="program.html">PROGRAM</a>
+          </li>
+          <li class="py-2 px-4">
+            <a href="infofaq.html"> INFO & FAQ</a>
+          </li>
+      </ul>
+    </div>
+
+  </div>
+    
+  <main class="bg-custom h-[94vh] relative overflow-hidden "  id="scrollableDiv">
+    
+      <div class="absolute inset-0 flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center text-center"id="scrollContent">
+          <img src="img\favicon.png" alt="favicon.png" class="mb-10 w-98">
+          <p class="text-4xl mb-1 text-white uppercase">MARK BROOM</p>
+          <p class="text-4xl mb-1 text-white uppercase">JOTON . TEMUDO</p>
+          <p class="text-4xl mb-1 text-white uppercase">CARDAO B2B ANDRÉ DIAS</p>
+          <p class="text-4xl mb-1 text-white uppercase">HIVO . ROWEN</p>
+          <p class="text-4xl mb-1 text-white uppercase">SOUL LAHZ (LIVE) . TM . URZE . ZXZX</p>
+          <div class=" my-8">
+          <a href="https://shotgun.live/pt-pt/events/convivio-eletronico#EventTickets" class="bg-green-500 text-black hover:bg-green-400 rounded-full p-2 uppercase tracking-wide font-semibold transition duration-300">Get Tickets</a>
+          </div>
+        </div>
+        
+      </div>       
+    </main>
+
+    
+
+   
+    
+  
+
+  
+    <footer class="bg-black text-white fixed w-full bottom-0 text-center py-2">
+      <div class="flex justify-center items-center space-x-4">
+        <a href="https://www.facebook.com/convivioeletronico/" class="text-white hover:text-green-400">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        
+        <a href="https://www.instagram.com/convivioeletronico/?hl=pt" class="text-white hover:text-green-400">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Add more social media icons as needed -->
+      </div>
+      <p>&copy; 2023 Convivio Eletrônico. All rights reserved.</p>
+    </footer>
+  
+ 
+
+
+<script src="index.js"></script>
+
+
+
+
+</body>
+</html>
+
