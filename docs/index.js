@@ -38,3 +38,26 @@ scrollableDiv.addEventListener("wheel", (event) => {
   
   event.preventDefault();
 });
+
+// COUNTDOWN
+
+const countdownElement = document.getElementById('countdown');
+
+function updateCountdown() {
+    const now = new Date();
+    const targetDate = new Date('2023-09-02T17:30:00'); // Defina a data alvo do countdown aqui
+    const timeRemaining = targetDate - now;
+
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+updateCountdown(); // Chame a função para atualizar imediatamente
+setInterval(updateCountdown, 1000); // Atualize a cada segundo
+
+
+
